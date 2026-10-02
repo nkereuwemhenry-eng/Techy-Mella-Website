@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from '../assets/logo.png'
 import ThemeTogglebtn from './ThemeTogglebtn'
-import { motion } from "motion/react"
+import { motion } from 'motion/react'
 
 const Navbar = ({ theme, setTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

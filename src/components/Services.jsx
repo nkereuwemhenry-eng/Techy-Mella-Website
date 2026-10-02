@@ -37,11 +37,11 @@ const Services = () => {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ staggerChildren: 0.5 }}
-    id='services' className='relative flex flex-col items-center gap-7 px-4
-    sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'>
+    id='services' className='relative mx-auto flex w-full max-w-7xl flex-col items-center gap-7 px-4
+    pt-30 text-gray-700 dark:text-white sm:px-8 lg:px-12 xl:px-16'>
         <Title title='What We Offer' desc='We help brands get seen, build their audience, and turn engagement into opportunities.' />
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-full'>
+        <div className='grid w-full grid-cols-1 gap-6 md:grid-cols-2'>
           {servicesData.map((service, index) => (
             <Servicecard key={service.title} service={service} index={index} />
           ))}
